@@ -11,12 +11,14 @@ import {AppRouting} from './app-routing.module';
 import {HumanService} from './human.service';
 import {RouterModule} from '@angular/router';
 import { ListHumanComponent } from './list-human/list-human.component';
+import { EditHumanComponent } from './edit-human/edit-human.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NewHumanComponent,
-    ListHumanComponent
+    ListHumanComponent,
+    EditHumanComponent
   ],
   imports: [
     BrowserModule, AngularFireModule.initializeApp(environment.firebase), AngularFirestoreModule, FormsModule, ReactiveFormsModule,
