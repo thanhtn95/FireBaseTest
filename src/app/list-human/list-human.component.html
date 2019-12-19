@@ -1,0 +1,13 @@
+<table style="margin-left: 50%; margin-top: 20%">
+  <thead>
+  <th>ID</th>
+  <th>Name</th>
+  </thead>
+  <tbody>
+  <tr *ngFor="let human of humanList">
+    <td>{{human.payload.doc.data().id}}</td>
+    <td>{{human.payload.doc.data().name}}</td>
+    <td><button type="button" (click)="deleteHuman(human.payload.doc.id)">Delete</button></td>
+  </tr>
+  </tbody>
+</table>
